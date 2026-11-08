@@ -4,6 +4,8 @@ My personal build of CleanYourTV for a CANDY Android TV DVB (Haier, MediaTek m73
 holds my local changes so a `git pull` from upstream never wipes them. `main` stays in sync with
 Gathin23/cleanyourtv; the TV list I contributed lives on the `candy-android-tv-dvb` branch (upstream PR #3559).
 
+The full setup, fixes and undo steps are in [RUNBOOK.md](RUNBOOK.md).
+
 ## What's changed from upstream
 
 | File | Change |
@@ -18,10 +20,10 @@ Gathin23/cleanyourtv; the TV list I contributed lives on the `candy-android-tv-d
 
 ## Common commands (from the repo folder, USB debugging on)
 
-    TV_HOST=192.168.18.140 tools/theme.sh themes/haris            # push theme changes
-    TV_HOST=192.168.18.140 launcher/build-and-install.sh          # rebuild and update the launcher
-    TV_HOST=192.168.18.140 tools/venv/bin/python -I tools/check.py haris/candy-debloat.txt com.gathin.tvhome
-    tools/venv/bin/python -I tools/adb-closed.py 192.168.18.140   # after closing ADB: must say closed
+    TV_HOST=<tv ip> tools/theme.sh themes/haris            # push theme changes
+    TV_HOST=<tv ip> launcher/build-and-install.sh          # rebuild and update the launcher
+    TV_HOST=<tv ip> tools/venv/bin/python -I tools/check.py haris/candy-debloat.txt com.gathin.tvhome
+    tools/venv/bin/python -I tools/adb-closed.py <tv ip>   # after closing ADB: must say closed
 
 ## Getting upstream updates
 

@@ -1,5 +1,5 @@
 # Haris's CANDY Android TV DVB: everything turned off on this set, for tools/check.py after a firmware update.
-# Check: TV_HOST=192.168.18.140 tools/venv/bin/python -I tools/check.py haris/candy-debloat.txt com.gathin.tvhome
+# Check: TV_HOST=<tv ip> tools/venv/bin/python -I tools/check.py haris/candy-debloat.txt com.gathin.tvhome
 # Fix:   same with --fix after check.py
 tv.anoki.acr.anokiacroptin
 fusion.android.tv.demo
