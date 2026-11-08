@@ -167,6 +167,13 @@ public class MainActivity extends Activity {
         }).start();
     }
 
+    public static String to12(String v) {
+        if (v == null || v.length() < 5 || v.charAt(2) != ':') return v;
+        int h = Integer.parseInt(v.substring(0, 2));
+        int h12 = h % 12 == 0 ? 12 : h % 12;
+        return h12 + ":" + v.substring(3, 5) + (h < 12 ? " AM" : " PM");
+    }
+
     private void parse(JSONObject data) throws Exception {
         JSONObject t = data.getJSONObject("timings");
         int[] m = new int[NAMES.length];
@@ -234,7 +241,7 @@ public class MainActivity extends Activity {
             name.setPadding(0, dp(8), 0, dp(20));
             card.addView(name);
             TextView time = centered(text(42, hl ? 500 : 300, fg));
-            time.setText(times[i]);
+            time.setText(to12(times[i]));
             // Shrink rather than cut "05:10" when the card is narrow.
             time.setMaxLines(1);
             time.setAutoSizeTextTypeUniformWithConfiguration(20, 42, 1, TypedValue.COMPLEX_UNIT_SP);
@@ -244,7 +251,7 @@ public class MainActivity extends Activity {
             rows.addView(card, lp);
         }
         boolean reminders = getResources().getBoolean(R.bool.reminders);
-        String updated = getString(R.string.updated_at, new SimpleDateFormat("HH:mm", Locale.ROOT).format(new Date()));
+        String updated = getString(R.string.updated_at, new SimpleDateFormat("h:mm a", Locale.ENGLISH).format(new Date()));
         String statusStr = "Aladhan" + (methodName.isEmpty() ? "" : " · " + methodName) + " · " + updated;
         if (reminders) {
             statusStr += " · " + getString(R.string.reminders_active);

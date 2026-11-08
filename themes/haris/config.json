@@ -1,0 +1,39 @@
+{
+  "dock_apps": [
+    "com.mediatek.wwtv.tvcenter",
+    "com.google.android.youtube.tv",
+    "com.release.aryzaptv",
+    "com.bd.tamashatv",
+    "com.pitelevision.tapmadtv",
+    "com.imou.tv"
+  ],
+  "dock_row": true,
+  "single_row": true,
+  "dock_band_all": true,
+  "dock_glass": true,
+  "dock_even_padding": true,
+  "dock_title": true,
+  "rows_below_dock": 0,
+  "columns": 6,
+  "icon_only_buttons": true,
+  "icon_only_inputs": true,
+  "fade_rows": false,
+  "app_glow": true,
+  "ambient_glow": true,
+  "background_color": "#05070C",
+  "sky_intensity": 40,
+  "hidden_apps": [
+    "com.cvte.tv.fac.menu",
+    "com.cvte.tv.fac.aging",
+    "com.cvte.tv.hkcfac",
+    "com.cvte.tv.at",
+    "com.at.factory.factorymanager",
+    "com.at.factory.androidtvaidlservice",
+    "mediatek.factorymenu.ui"
+  ],
+  "show_stats": false,
+  "wifi_status_color": false,
+  "app_library": true,
+  "boot_to_live_tv": true,
+  "cinematic_home": true
+}

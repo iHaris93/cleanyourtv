@@ -2064,7 +2064,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
     /** "Last opened yesterday, 9:40 PM", the time in white; nothing (but the same height) when it was never seen. */
     private void updateHeroMeta(int position) {
-        long when = LastOpened.get(this, adapter.packageAt(position));
+        long when = 0; // Last opened line hidden (local patch)
         if (when <= 0) {
             heroMeta.setVisibility(View.INVISIBLE);
             return;

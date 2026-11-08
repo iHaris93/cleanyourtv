@@ -139,7 +139,7 @@ public class PrayerAlertActivity extends Activity {
         subRow.setPadding(0, dp(1), 0, 0);
 
         TextView timeView = new TextView(this);
-        timeView.setText(time);
+        timeView.setText(MainActivity.to12(time));
         timeView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 12);
         timeView.setTextColor(0xFF4ADE80); // soft vibrant green
         timeView.setTypeface(Build.VERSION.SDK_INT >= 28 ? Typeface.create(font, 600, false) : font);

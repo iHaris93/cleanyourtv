@@ -1,0 +1,28 @@
+# Haris's CANDY Android TV DVB: everything turned off on this set, for tools/check.py after a firmware update.
+# Check: TV_HOST=192.168.18.140 tools/venv/bin/python -I tools/check.py haris/candy-debloat.txt com.gathin.tvhome
+# Fix:   same with --fix after check.py
+tv.anoki.acr.anokiacroptin
+fusion.android.tv.demo
+android.autoinstalls.config.haier.hanyang
+ru.haier.evo
+com.haier.apps.evoSmart
+com.haierubic.usmartdevice
+com.google.android.feedback
+com.android.tv.feedbackconsent
+com.amazon.amazonvideo.livingroom
+com.tcl.browser
+com.mcontent
+com.google.android.play.games
+com.google.android.youtube.tvmusic
+com.google.android.tts
+com.haier.tvhousekeeper
+com.cvte.haier.tv.appmanager
+com.haier.apps
+com.google.android.partnersetup
+com.mediatek.android.leanbacklauncher.partnercustomizer
+com.mediatek.androidbox
+com.netflix.ninja
+com.cltv.fast
+com.google.android.syncadapters.calendar
+com.google.android.tvrecommendations
+com.haier.launcher.haiermatrix
