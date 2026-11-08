@@ -73,17 +73,23 @@ There are two routes in:
 
 - **Disabled:** Anoki ACR, retail demo, Haier auto-install, Haier app manager, Haier Apps, Evo, smart-device
   service, TV Housekeeper, content feed, partner setup and the home customizer, Google feedback, Play Games,
-  the bundled browser, plus the owner's choices (Prime Video, YouTube Music, Google TTS, Miracast) and the stock
+  the bundled browser, plus the owner's choices (Prime Video, YouTube Music, Google TTS) and the stock
   launcher.
-- **Removed for the user** (they came back at boot while the app manager was on): FAST channels,
+- **Removed for the user** (they came back at boot while the app manager was on):
   Recommendations, calendar sync, the Haier content launcher, Netflix.
-- **Enabled again:** `com.example.bt_pair_tips` (part of Bluetooth remote pairing, not a tips popup).
+- **Enabled again:**
+  - `com.example.bt_pair_tips`: part of Bluetooth remote pairing, not a tips popup.
+  - `com.cltv.fast` (restored with `cmd package install-existing`) and `com.mediatek.androidbox`: both are on
+    [Free My TV](https://github.com/simbasjungles/free-my-tv)'s protected list for a CVTE/MediaTek sibling
+    (Multilaser), grouped with remote keys, live TV and the media player. Nothing broke while they were off,
+    but they're kept on to be safe.
 
 **Never touch:**
 
 | Group | Packages |
 | --- | --- |
 | Live TV | `com.mediatek.wwtv.tvcenter`, `com.mediatek.tvinput`, `com.mediatek.tv.service`, `com.android.providers.tv` |
+| Inputs (per Free My TV) | `com.cltv.fast`, `com.mediatek.androidbox` |
 | Remote | `com.mediatek.autopair`, `com.example.bt_pair_tips`, `com.haier.tv.hmagicboard` (hot keys), `com.cvte.tv.hkcfac`, `com.google.android.tv.remote.service` |
 | Factory | `com.cvte.tv.fac.*`, `com.cvte.tv.at`, `com.at.factory.*`, `mediatek.factorymenu.ui` |
 | Core | Play services, Play Store, WebView, the setup wizard, system UI, settings, the keyboard, Dolby |

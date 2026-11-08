@@ -20,9 +20,7 @@ com.cvte.haier.tv.appmanager
 com.haier.apps
 com.google.android.partnersetup
 com.mediatek.android.leanbacklauncher.partnercustomizer
-com.mediatek.androidbox
 com.netflix.ninja
-com.cltv.fast
 com.google.android.syncadapters.calendar
 com.google.android.tvrecommendations
 com.haier.launcher.haiermatrix
