@@ -13,7 +13,8 @@
 # KEEP, even though the names look like bloat:
 # - com.example.bt_pair_tips, com.mediatek.autopair: Bluetooth remote pairing. bt_pair_tips was disabled
 #   here first as a "tips" popup and enabled again once the DVB2K list showed what it is.
-# - com.haier.tv.hmagicboard, com.cvte.tv.hkcfac: remote hot keys.
+# - com.haier.tv.hmagicboard: remote hot keys.
+# - com.cvte.tv.hkcfac: a factory package; keep it enabled and never start it (see the factory line below).
 # - com.google.android.tv.remote.service: the phone remote (Google's and third-party Android TV remote apps).
 # - Factory: com.cvte.tv.fac.menu, com.cvte.tv.fac.aging, com.cvte.tv.at, com.at.factory.factorymanager,
 #   com.at.factory.androidtvaidlservice, mediatek.factorymenu.ui. Never open these either (see the DVB2K list).
@@ -54,8 +55,7 @@ com.tcl.browser
 # com.google.android.youtube.tvmusic             # YouTube Music
 # com.google.android.tts                         # Google text-to-speech: Assistant answers become text only
 
-# Came back on at the next boot while com.cvte.haier.tv.appmanager was still enabled, and were then removed
-# for the user on this set instead (pm uninstall --user 0, which this repo does not use). Not yet tested as a
+# Came back on at the next boot while com.cvte.haier.tv.appmanager was still enabled. Not yet tested as a
 # plain disable with the app manager off, so left commented:
 # com.google.android.tvrecommendations           # recommendation and ad rows
 # com.google.android.syncadapters.calendar
